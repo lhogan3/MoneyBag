@@ -3,7 +3,8 @@ import React from 'react';
 import AppLoading from 'expo-app-loading';
 import { useFonts } from 'expo-font';
 
-
+// React Navigation
+import RootStack from './navigators/RootStack';
 import Welcome from './screens/Welcome';
 
 export default function App() {
@@ -16,6 +17,6 @@ if(!fontsLoaded) {
 }
 
   return (
-    <Welcome />
+    <RootStack />
   );
 }
